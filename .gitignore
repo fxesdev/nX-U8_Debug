@@ -1,0 +1,7 @@
+nxu8_dbg.svf
+design.json
+design.cfg
+__pycache__
+bench/sim_build
+bench/*.vcd
+bench/results.xml

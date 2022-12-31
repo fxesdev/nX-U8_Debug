@@ -1,0 +1,19 @@
+LOCATE      COMP "i_clk"      SITE "P6";
+IOBUF       PORT "i_clk"      IO_TYPE=LVCMOS33;
+FREQUENCY   PORT "i_clk"      25 MHZ;
+
+// UART
+LOCATE      COMP "o_uart_tx"  SITE "B9";
+IOBUF       PORT "o_uart_tx"  IO_TYPE=LVCMOS33;
+LOCATE      COMP "i_uart_rx"  SITE "A9";
+IOBUF       PORT "i_uart_rx"  IO_TYPE=LVCMOS33;
+
+// nX-U8 Debug
+LOCATE      COMP "o_nx_clk"    SITE "E1";
+IOBUF       PORT "o_nx_clk"    IO_TYPE=LVCMOS33;
+IOBUF       PORT "o_nx_clk"    SLEWRATE=FAST;
+IOBUF       PORT "o_nx_clk"    PULLMODE=DOWN;
+LOCATE      COMP "io_nx_data"  SITE "F2";
+IOBUF       PORT "io_nx_data"  IO_TYPE=LVCMOS33;
+IOBUF       PORT "io_nx_data"  SLEWRATE=FAST;
+IOBUF       PORT "io_nx_data"  PULLMODE=DOWN;
